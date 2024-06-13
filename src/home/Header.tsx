@@ -1,3 +1,4 @@
+import React from 'react'
 import { SearchIcon,GlobeIcon,UserPlus } from 'lucide-react'
 import List from '../components/List'
 import Dropdown from '../components/Dropdown'

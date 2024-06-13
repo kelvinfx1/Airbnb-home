@@ -1,3 +1,4 @@
+import React from 'react'
 import logo from '../assets/Airbnbll-removebg-preview.png'
 
 function Logo() {

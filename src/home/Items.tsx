@@ -1,3 +1,4 @@
+import React from 'react';
 import photo1 from '../assets/air1.jpg';
 import photo2 from '../assets/air10.jpg';
 import photo3 from '../assets/air11.jpg';
@@ -58,8 +59,8 @@ const items =[
    
  <section className='w-[100vw] '>
  <div className='grid grid-cols-4 gap-6 w-[90vw] ml-[50%] translate-x-[-50%] mt-8 '>
- {items.map((item)=>(
-  <div>
+ {items.map((item,i)=>(
+  <div key={i}>
     <div className='h-[280px] shadow-xl'>
       
       <Swiper 

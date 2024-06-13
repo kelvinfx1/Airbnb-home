@@ -1,4 +1,4 @@
-import  { useState } from 'react'
+import React, { useState } from 'react'
 import { XCircleIcon } from 'lucide-react'
 import facbook from '../assets/Facebook.svg'
 import googl from '../assets/Google.svg'
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 function Login() {
   const [selectedOption, setSelectedOption] = useState('');
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setSelectedOption(e.target.value);
   };
 
@@ -20,7 +20,7 @@ function Login() {
            
         </section>
         <hr  className='border-black w-full mt-4'/>
-        <p className='text-xl font-extrabold ml-4 mb-6 mt-4 ml-10'>
+        <p className='text-xl font-extrabold mb-6 mt-4 ml-10'>
             welcome to Airbnb
         </p>
         <form action="

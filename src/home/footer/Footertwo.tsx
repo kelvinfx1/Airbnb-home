@@ -1,3 +1,4 @@
+import React from 'react'
 
 
 function Footertwo() {
@@ -14,8 +15,8 @@ function Footertwo() {
     <div  className='ml-36 flex gap-36 mt-7 '>
     <div>
     <p className='font-extrabold'>support</p>
-      {supports.map((supoort)=>(
-        <div className='mt-7 font-semibold'>
+      {supports.map((supoort,index)=>(
+        <div className='mt-7 font-semibold' key={index}>
          
           <p>{supoort}</p>
         </div>
@@ -23,8 +24,8 @@ function Footertwo() {
     </div>
     <div>
     <p className='font-extrabold'>Hosting</p>
-      {Hostings.map((hosting)=>(
-        <div  className='mt-7 font-semibold'>
+      {Hostings.map((hosting,index)=>(
+        <div  className='mt-7 font-semibold' key={index}>
          
           <p>{hosting}</p>
         </div>
@@ -32,8 +33,8 @@ function Footertwo() {
     </div>
     <div>
     <p className='font-extrabold'>Airbnb</p>
-      {airbnbs.map((airbnb)=>(
-        <div  className='mt-7 font-semibold'>
+      {airbnbs.map((airbnb,index)=>(
+        <div  className='mt-7 font-semibold' key={index}>
           
           <p>{airbnb}</p>
         </div>
