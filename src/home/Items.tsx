@@ -13,7 +13,7 @@ import photo11 from '../assets/air8.jpg';
 import photo12 from '../assets/airnine.jpg';
 import { HeartIcon,PoundSterling,StarIcon } from 'lucide-react';
 import { Swiper,SwiperSlide } from 'swiper/react';
-import { Navigation,Autoplay,Pagination,Scrollbar } from 'swiper/modules';
+import { Navigation,Pagination,Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import  'swiper/css/navigation';
 import  'swiper/css/autoplay';
