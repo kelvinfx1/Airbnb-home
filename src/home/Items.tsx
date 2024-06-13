@@ -1,4 +1,4 @@
-import React from 'react';
+import  { useEffect } from 'react';
 import photo1 from '../assets/air1.jpg';
 import photo2 from '../assets/air10.jpg';
 import photo3 from '../assets/air11.jpg';
@@ -16,10 +16,11 @@ import { Swiper,SwiperSlide } from 'swiper/react';
 import { Navigation,Pagination,Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import  'swiper/css/navigation';
-import  'swiper/css/autoplay';
 import  'swiper/css/pagination';
 import  'swiper/css/scrollbar';
 import 'swiper/swiper-bundle.css';
+import Aos from'aos';
+import 'aos/dist/aos.css'
 
 
 
@@ -27,6 +28,15 @@ import 'swiper/swiper-bundle.css';
 
 
 function Items() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000, // You can customize the animation duration here
+      easing: 'ease-in-out', // Default easing for AOS animations
+      once: false, // Whether animation should happen only once - while scrolling down
+      mirror: true , // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
 const items =[
   {image:photo1,Image2:photo12,image3:photo5,image4:photo3, icon:HeartIcon,title1:'Halfmoon bay,califonia,US',title2:'22-27 oct. Individual Host',title3:'Beach and Ocean views', title4:"1,634 total"},
   {image:photo2,Image2:photo10,image3:photo12,image4:photo9, icon:HeartIcon,title1:'Halfmoon bay,califonia,US',title2:'22-27 oct. Individual Host',title3:'Beach and Ocean views', title4:"1,634 total"},
@@ -58,10 +68,10 @@ const items =[
     <>
    
  <section className='w-[100vw] '>
- <div className='grid grid-cols-4 gap-6 w-[90vw] ml-[50%] translate-x-[-50%] mt-8 '>
+ <div className='grid grid-cols-4 gap-6 w-[90vw] ml-[50%] translate-x-[-50%] mt-8 '   >
  {items.map((item,i)=>(
   <div key={i}>
-    <div className='h-[280px] shadow-xl'>
+    <div className='h-[280px] shadow-xl' data-aos="fade-up">
       
       <Swiper 
         modules={[Navigation,Pagination,Scrollbar]}
@@ -71,6 +81,7 @@ const items =[
         onSwiper={()=>console.log(Swiper)}
         pagination={{clickable:true}}
         scrollbar={{draggable:true}}
+        
         
         >
             <SwiperSlide><img src={item.image} alt="" className='rounded-xl h-[280px]' /></SwiperSlide>
@@ -99,7 +110,7 @@ const items =[
   </div>
  ))}
  </div>
- <div className='grid justify-center'>
+ <div className='grid justify-center' data-aos="fade-right">
   <p className='font-bold text-xl relative right-8 mb-5'>
     continue exploring amazing views
   </p>

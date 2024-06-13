@@ -1,4 +1,3 @@
-import React from 'react'
 import { SearchIcon,GlobeIcon,UserPlus } from 'lucide-react'
 import List from '../components/List'
 import Dropdown from '../components/Dropdown'
@@ -8,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <div className=''>
+    <div className='sticky top-0 '>
       <section className='flex justify-around  pt-6 '>
       <Logo />
       <form action="" className='relative'>

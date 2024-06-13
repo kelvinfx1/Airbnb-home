@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { XCircleIcon } from 'lucide-react'
 import facbook from '../assets/Facebook.svg'
 import googl from '../assets/Google.svg'

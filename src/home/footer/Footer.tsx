@@ -1,6 +1,8 @@
-import React from 'react'
+import  { useEffect } from 'react'
 import Footertwo from './Footertwo';
 import { GlobeIcon,PoundSterling,FacebookIcon,TwitterIcon,InstagramIcon,MapIcon } from 'lucide-react';
+import aos from 'aos'
+import 'aos/dist/aos.css'
 
 function Footer() {
     const lists=[
@@ -23,9 +25,17 @@ function Footer() {
         { top:"Aberfeldy",down:"Holiday rentals"},
         { top:"Aberfeldy",down:"Holiday rentals"}
     ];
+    useEffect(() => {
+        aos.init({
+          duration: 2000, // You can customize the animation duration here
+          easing: 'ease-in-out', // Default easing for AOS animations
+          once: false, // Whether animation should happen only once - while scrolling down
+          mirror: true , // Whether elements should animate out while scrolling past them
+        });
+      }, []);
   return (
    <>
-    <div className='bg-gray-200'>
+    <div className='bg-gray-200' data-aos='fade-up'>
     <div className='ml-[50%] translate-x-[-80%] mt-6 '>
         <p className='font-bold'>Inspirtion for future getaways </p>
         <ul className='flex gap-6 font-semibold mt-2 w-[60vw]'>

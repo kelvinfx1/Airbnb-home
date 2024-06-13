@@ -1,4 +1,3 @@
-import React from 'react'
 import airlogo from '../assets/Airbnbll-removebg-preview.png'
 import { Link } from 'react-router-dom'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import {View,Home,TreePalmIcon,SnowflakeIcon,PianoIcon,LucideHome,Drill,ShipIcon,TramFront,TreeDeciduous,TentTreeIcon,SlidersHorizontalIcon}  from 'lucide-react'
 
 
