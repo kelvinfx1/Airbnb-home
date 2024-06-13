@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { XCircleIcon } from 'lucide-react'
 import facbook from '../assets/Facebook.svg'
 import googl from '../assets/Google.svg'
@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'
 
 function Login() {
   const [selectedOption, setSelectedOption] = useState('');
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
+  const handleChange = (e) => {
+    setSelectedOption(e.target.value);
   };
 
   return (

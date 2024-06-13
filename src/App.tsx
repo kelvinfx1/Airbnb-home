@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import Layout from './Layout'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import HomeWhenLoggedIN from './pages/HomeWhenLoggedIN'
@@ -12,7 +11,7 @@ import SpalshScreen from './components/Splash'
 
 
 function App() {
-  const[use,setuse]=useState()
+  
   return (
    <>
    

@@ -1,4 +1,3 @@
-import React from 'react'
 import facbook from '../assets/Facebook.svg'
 import googl from '../assets/Google.svg'
 import apple from '../assets/Apple.svg'

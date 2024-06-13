@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderWhenLogIn from './HeaderWhenLogIn'
 import Items from '../home/Items'
 import Footer from '../home/footer/Footer'
