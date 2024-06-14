@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function Areyousure() {
   return (
     <div className='bg-gray-50 w-[100vw] h-[100vh]'>
-        <div className='w-[400px] ml-[450px] mt-[200px]  bg-white shadow-2xl rounded-md'>
+        <div className='md:w-[400px] md:ml-[450px] mt-[200px]  bg-white shadow-2xl rounded-md'>
             <p className='font-extrabold text-2xl'>
                 Are you sure you want to log out?
             </p>

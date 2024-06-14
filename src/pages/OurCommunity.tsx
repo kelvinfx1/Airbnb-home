@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function OurCommunity() {
   return (
-    <div className='w-[500px] ml-[400px] bg-slate-100 pb-10 pt-7'>
+    <div className='md:w-[500px] md:ml-[400px] bg-slate-100 pb-10 pt-7'>
         <div className='ml-7'>
         <div className='h-[70px] w-[100px] ml-5'>
             <img src={airlogo} alt="" />

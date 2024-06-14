@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Dropdown() {
   return (
     <>
-    <div className="dropdown dropdown-bottom">
+    <div className="dropdown dropdown-bottom ">
   <div tabIndex={0} role="button" className="">
     <MenuIcon className='relative '/>
 

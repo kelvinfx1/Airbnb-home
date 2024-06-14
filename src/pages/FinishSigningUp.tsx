@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function FinishSigningUp() {
   return (
-    <div className='w-[600px] ml-[300px] bg-slate-100 pb-10 pt-7'>
+    <div className='md:w-[600px] md:ml-[300px] bg-slate-100 pb-10 pt-7'>
        <section className='flex justify-between'>
        <p className='ml-4 font-extrabold' >
             {'<'}

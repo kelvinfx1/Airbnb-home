@@ -13,7 +13,7 @@ function Login() {
   };
 
   return (
-    <div className='w-[600px] ml-[360px] shadow-2xl bg-slate-100 pb-10 pt-7'  id='log-in'>
+    <div className='md:w-[600px] md:ml-[360px] shadow-2xl bg-slate-100 pb-10 pt-7'  id='log-in'>
         <section className='flex justify-between'>
             <XCircleIcon className='ml-4'/>
             <p className='font-bold mr-[40%] '>log in or sign up</p>

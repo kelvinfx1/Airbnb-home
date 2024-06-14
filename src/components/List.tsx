@@ -3,9 +3,9 @@ import {View,Home,TreePalmIcon,SnowflakeIcon,PianoIcon,LucideHome,Drill,ShipIcon
 
 function List() {
   return (
-    <div className='flex gap-6 justify-center mt-5 w-[100vw]'>   
-    <div>
-      <View className='ml-9'/>
+    <div className='flex gap-6 justify-center mt-5 w-max overflow-x-auto whitespace-nowrap max-w-full md:ml-32 '>   
+    <div className='inline-block'>
+      <View className='ml-'/>
       <p>Amazing views</p>
     </div>
     <div>
@@ -16,13 +16,13 @@ function List() {
       <TreePalmIcon className='ml-6'/>
       <p>beachfront</p>
       </div>
-      <div>
-        <SnowflakeIcon className='ml-2'/>
+      <div >
+        <SnowflakeIcon className='ml-2 '/>
         <p>skiiing</p>
 
       </div>
       <div>
-<PianoIcon className='ml-8'/>
+<PianoIcon className='ml-3'/>
 <p>
   Grand pionos
 </p>
@@ -40,7 +40,7 @@ function List() {
         <TramFront/>
         <p>Luxe</p>
       </div>
-      <div>
+      <div  className=''>
         <ShipIcon className='ml-2'/>
         <p>Boats</p>
       </div>
@@ -53,7 +53,7 @@ function List() {
        <p>Treehouse</p>
       </div>
       <div className='border-gray-300 border-2 rounded-xl h-7 w-7 flex justify-center font-extrabold text-2xl '>
-       <p className='relative bottom-2'>
+       <p className='relative bottom-2 hidden md:block'>
        <button>
        {'>'}
        </button>
@@ -61,8 +61,8 @@ function List() {
       </div>
       <div className='flex gap-2 border-2 border-gray-400 rounded-md h-9'>
        
-       <SlidersHorizontalIcon className='mt-1 '/>
-      <p className='mt-1 font-medium'>Filters</p>
+       <SlidersHorizontalIcon className='mt-1 hidden md:block'/>
+      <p className='mt-1 font-medium hidden md:block'>Filters</p>
       
       </div>
 

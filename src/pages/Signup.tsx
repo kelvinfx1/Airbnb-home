@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom'
 
 function Signup() {
   return (
-    <div className='w-[600px] ml-[350px] bg-slate-100 shadow-2xl pb-10 pt-7' >
+    <div className='md:w-[600px] w-[100vw] md:ml-[350px] bg-slate-100 shadow-2xl pb-10 pt-7' >
         <section className='flex justify-between'>
             <XCircleIcon className='ml-4'/>
             <p className='font-bold mr-[40%] '>log in or sign up</p>
            
         </section>
         <hr  className='border-black w-full mt-4'/>
-        <p className='text-xl font-extrabold ml-4 mb-6 mt-4 ml-10'>
+        <p className='text-xl font-extrabold  mb-6 mt-4 ml-10'>
             welcome to Airbnb
         </p>
         <form action="

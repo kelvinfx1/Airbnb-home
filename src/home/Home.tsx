@@ -8,7 +8,7 @@ function Home() {
     <>
 
 
-   <div id='home' className='w-[100vw]  '>
+   <div id='home' className='w-[100vw] overflow-hidden  '>
     <SpalshScreen/>
    <Header />
     <Items />

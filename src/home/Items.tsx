@@ -13,11 +13,12 @@ import photo11 from '../assets/air8.jpg';
 import photo12 from '../assets/airnine.jpg';
 import { HeartIcon,PoundSterling,StarIcon } from 'lucide-react';
 import { Swiper,SwiperSlide } from 'swiper/react';
-import { Navigation,Pagination,Scrollbar } from 'swiper/modules';
+import { Navigation,Pagination,Autoplay,Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import  'swiper/css/navigation';
 import  'swiper/css/pagination';
 import  'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
 import 'swiper/swiper-bundle.css';
 import Aos from'aos';
 import 'aos/dist/aos.css'
@@ -68,33 +69,34 @@ const items =[
     <>
    
  <section className='w-[100vw] '>
- <div className='grid grid-cols-4 gap-6 w-[90vw] ml-[50%] translate-x-[-50%] mt-8 '   >
+ <div className='grid grid-cols-1 md:grid-cols-4 gap-6 w-[90vw] md:ml-[50%] md:translate-x-[-50%] mt-8 ml-10 '   >
  {items.map((item,i)=>(
   <div key={i}>
-    <div className='h-[280px] shadow-xl' data-aos="fade-up">
+    <div className='h-[280px] shadow-xl md:w-[280px] w-[80vw] flex  ' data-aos="fade-up">
       
       <Swiper 
-        modules={[Navigation,Pagination,Scrollbar]}
+        modules={[Navigation,Pagination,Scrollbar,Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
         onSlideChange={()=>console.log('slide change')}
         onSwiper={()=>console.log(Swiper)}
         pagination={{clickable:true}}
         scrollbar={{draggable:true}}
+        autoplay={{delay:1000}}
         
         
         >
-            <SwiperSlide><img src={item.image} alt="" className='rounded-xl h-[280px]' /></SwiperSlide>
+            <SwiperSlide><img src={item.image} alt="" className='rounded-xl h-[280px] md:w-full w-full' /></SwiperSlide>
             <SwiperSlide><img src={item.Image2} alt="" className='rounded-xl h-[280px]' /></SwiperSlide>
             <SwiperSlide><img src={item.image3} alt="" className='rounded-xl h-[280px]' /></SwiperSlide>
-            <SwiperSlide><img src={item.image4} alt="" className='rounded-xl h-[280px]' /></SwiperSlide>
+            <SwiperSlide><img src={item.image4} alt="" className='rounded-xl h-[280px] ' /></SwiperSlide>
 
         </Swiper>
 
       
     </div>
     <div className='relative '>
-      <HeartIcon className='absolute bottom-[245px] left-64 text-black  z-10' />
+      <HeartIcon className='absolute md:bottom-[245px] bottom-[240px] left-[240px] md:left-64 text-black  z-10' />
     </div>
     <p className='font-bold hover:uppercase'>{item.title1}</p>
     <p className='font-semibold'>{item.title3}</p>
@@ -110,7 +112,7 @@ const items =[
   </div>
  ))}
  </div>
- <div className='grid justify-center' data-aos="fade-right">
+ <div className='md:grid md:ustify-center ml-16' data-aos="fade-right">
   <p className='font-bold text-xl relative right-8 mb-5'>
     continue exploring amazing views
   </p>
